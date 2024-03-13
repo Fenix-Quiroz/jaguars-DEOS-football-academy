@@ -1,0 +1,62 @@
+---
+import GalleryPhoto from "@/components/GalleryPhoto.astro";
+---
+
+<section
+  class={`
+    w-full max-w-[1400px]
+    grid   lg:grid-cols-10 auto-rows-[35rem]  lg:auto-rows-[30rem] gap-4
+    mx-auto px-6 md:px-12 lg:px-20 lg:pt-5
+  `}
+>
+  <GalleryPhoto class="col-span-10 lg:col-span-4 border border-primaryColor">
+    <div slot="image" class="h-full w-full">
+      <img class="h-full w-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photo.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+  <GalleryPhoto class="col-span-10 lg:col-span-6 border border-primaryColor">
+    <div slot="image" class="w-full h-full">
+      <img class="w-full h-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photoh.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+  <GalleryPhoto class="col-span-10 lg:col-span-6 border border-primaryColor">
+    <div slot="image" class="h-full w-full">
+      <img class="h-full w-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photoh2.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+  <GalleryPhoto class="col-span-10 lg:col-span-4 border border-primaryColor">
+    <div slot="image" class="h-full w-full">
+      <img class="h-full w-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photo5.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+  <GalleryPhoto class="col-span-10 lg:col-span-4 border border-primaryColor">
+    <div slot="image" class="w-full h-full">
+      <img class="h-full w-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photo7.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+  <GalleryPhoto class="col-span-10 lg:col-span-6 border border-primaryColor">
+    <div slot="image" class="h-full w-full">
+      <img class="h-full w-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photoh4.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+  <GalleryPhoto class="col-span-10 lg:col-span-6 border border-primaryColor">
+    <div slot="image" class="h-full w-full">
+      <img class="h-full w-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photoh5.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+  <GalleryPhoto class="col-span-10 lg:col-span-4 border border-primaryColor">
+    <div slot="image" class="h-full w-full">
+      <img class="h-full w-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photo8.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+  <GalleryPhoto class="col-span-10 lg:col-span-4 border border-primaryColor">
+    <div slot="image" class="h-full w-full">
+      <img class="h-full w-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photo2.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+  <GalleryPhoto class="col-span-10 lg:col-span-6 border border-primaryColor">
+    <div slot="image" class="h-full w-full">
+      <img class="h-full w-full hover:scale-105 hover:ease-in-out hover:duration-1000" src="/images/gallery-photoh6.webp" alt="Imagen de entrenamientos." />
+    </div>
+  </GalleryPhoto>
+</section>

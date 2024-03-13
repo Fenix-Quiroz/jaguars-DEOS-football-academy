@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "@/sections/Hero.astro";
+import Carousel from "@/components/Carousel.astro";
+import SocialNetworks from "@/components/SocialNetworks.astro";
+import Facebook from "@/assets/icons/Facebook.astro";
+import TikTok from "@/assets/icons/TikTok.astro";
+import WhatsApp from "@/assets/icons/WhatsApp.astro";
+import Main from "@/sections/Main.astro";
+import Footer from "@/sections/Footer.astro";
+---
+
+<Layout title="Jaguares DEOS, academia de alto rendimiento , futbol , voley, basquet y entrenamiento de porteros">
+  <div class="h-full-screen">
+    <Hero />
+    <Carousel />
+    <div class="flex flex-col md:flex-row justify-center items-center mt-10 ">
+      <SocialNetworks href="https://www.facebook.com/oscar.DT10">
+        <Facebook />
+        Facebook
+      </SocialNetworks>
+      <SocialNetworks href="https://www.tiktok.com/@jaguaresdeos">
+        <TikTok />
+        TikTok
+      </SocialNetworks>
+      <SocialNetworks href="https://wa.me/+51997621348">
+        <WhatsApp />
+        WhatsApp
+      </SocialNetworks>
+    </div>
+  </div>
+  <main>
+    <Main />
+    <div class="fixed bottom-0 right-0 p-5 animate-bouncing animate-duration-1000 animate-steps-modern animate-iteration-count-infinite   ">
+      <a class="hover:scale-125" target="_blank" href="https://wa.me/+51997621348">
+        <WhatsApp />
+      </a>
+    </div>
+  </main>
+  <Footer/>
+</Layout>

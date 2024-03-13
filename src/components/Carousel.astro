@@ -1,0 +1,37 @@
+<section
+  class="m-auto h-auto text-azul
+        p-[10px] overflow-hidden bg-primaryColor
+        mt-5 lg:mt-10 w-full"
+>
+  <div
+    class="carousel w-[150px] lg:w-[300px] h-auto flex animate-blurred-fade-in"
+  >
+    <div class="uppercase font-extrabold lg:text-5xl text-2xl lg:mr-20 mr-10">
+      fútbol
+    </div>
+    <div class="uppercase font-extrabold lg:text-5xl text-2xl lg:mr-20 mr-10">
+      voley
+    </div>
+    <div class="uppercase font-extrabold lg:text-5xl text-2xl lg:mr-20 mr-10">
+      básquet
+    </div>
+    <p class="uppercase font-extrabold lg:text-5xl text-2xl lg:mr-20 mr-10">
+      porteros
+    </p>
+  </div>
+</section>
+
+<style>
+  .carousel {
+    animation: carousel-animation 15s linear infinite;
+  }
+
+  @keyframes carousel-animation {
+    0% {
+      transform: translateX(400%);
+    }
+    100% {
+      transform: translateX(-360%);
+    }
+  }
+</style>

@@ -1,0 +1,19 @@
+---
+interface Props {
+  class?: string
+ 
+}
+---
+<div 
+class={`
+    ${Astro.props.class}
+    col-span-5
+    relative rounded-xl
+    backdrop-blur-md
+    border border-black/10
+    shadow-inner shadow-white/10
+    overflow-hidden
+    group
+  `}>
+    <slot  name="image"/>
+</div>

@@ -1,0 +1,95 @@
+---
+import BentoItem from "@/components/BentoItem.astro";
+---
+
+<section
+  class={`
+    w-full max-w-[1400px]
+    grid  lg:grid-cols-10 auto-rows-[30rem]  gap-4
+    mx-auto p-6 pb-5 md:p-12 md:pb-5 lg:p-20 lg:pb-5
+  `}
+>
+  <BentoItem class="col-span-10 lg:col-span-4" title="Futbol mixto">
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/sports_background/futbol-bg.webp');"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      "Construyendo <strong>habilidades</strong>, creando vínculos: en nuestra
+      comunidad futbolística, cada paso es una oportunidad para <strong
+        >aprender</strong
+      > , <strong>crecer</strong> y
+      <strong>divertirse</strong>. Únete a nosotros y descubre el placer de
+      mejorar juntos en el campo de juego."
+    </p>
+  </BentoItem>
+  <BentoItem class="col-span-10 lg:col-span-6" title="Voley mixto">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/sports_background/voley-bg.webp');"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      "Construyendo equipos, punto a punto: en nuestra cancha de voleibol,
+      <strong
+        >cada jugada es una lección y cada set es una oportunidad para mejorar
+        juntos.</strong
+      >
+      Únete a nuestra comunidad donde la <strong>diversión</strong> se encuentra
+      con el <strong>esfuerzo</strong> , creando un ambiente acogedor para todos
+      los <strong>amantes</strong> del <strong>voleibol.</strong> "
+    </p>
+  </BentoItem>
+  <BentoItem
+    class="col-span-10 lg:col-span-6"
+    title="Entrenamiento de porteros"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/sports_background/porteros-bg.webp');"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      "Protegiendo la meta con <strong>pasión</strong> y <strong
+        >compromiso</strong
+      >: en nuestro equipo de
+      <strong>porteros</strong>, cada salvada es un <strong>logro</strong> y cada
+      sesión de entrenamiento es una
+      <strong>oportunidad para mejorar</strong>. Únete a nosotros y descubre
+      cómo <strong>defender</strong> el arco no es solo un <strong
+        >trabajo</strong
+      >, sino una<strong>pasión</strong> compartida por la <strong
+        >seguridad</strong
+      >
+      del <strong>equipo</strong>."
+    </p>
+  </BentoItem>
+  <BentoItem class="col-span-10 lg:col-span-4" title="Basquet mixto">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/sports_background/basquet-bg.webp');"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      "Construyendo <strong>destrezas</strong>, un <strong>dribbling</strong> a la
+      vez: en nuestro equipo de
+      <strong>baloncesto</strong>, cada pase es una <strong
+        >oportunidad para aprender</strong
+      > y cada juego es una experiencia de crecimiento.
+    </p>
+  </BentoItem>
+</section>
